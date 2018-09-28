@@ -1,0 +1,10 @@
+coverageRate=1
+coverage=0.3
+coverage=0.3
+coverage=0.1
+coverage=0.1
+coverage=0.1
+coverage=0.1
+exceptionRate=0
+mutationRate=0
+

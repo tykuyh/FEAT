@@ -1,0 +1,1 @@
+adb -s %1 shell monkey -p %2 --throttle 500 -v -v -v 500 > %3

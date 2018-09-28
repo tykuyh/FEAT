@@ -1,0 +1,5 @@
+AppDir=/app
+SourceCodeDir=/app/src/main/java
+ClassesDir=/app/build/intermediates/classes
+ReportDir=/report/coveragereport
+ApkCreatePath=/app/build/outputs/apk/app-debug.apk
