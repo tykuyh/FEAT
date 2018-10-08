@@ -21,17 +21,33 @@ public class modify {
         String courseFile = directory.getCanonicalPath();
         System.out.println(courseFile);
 		Runtime r=Runtime.getRuntime();	
+		
+    	File f=new File(appdir);
+        if(!f.exists()) {
+        	appdir=courseFile+File.separator+appdir;
+        }
+        f=new File(codedir);
+        if(!f.exists()) {
+        	codedir=courseFile+File.separator+codedir;
+        }
+		
+		
         if (OSUtil.isWin()) {
             r.exec("Commands\\win\\putGradle.bat " + courseFile + " " + appdir + " " + codedir);
             Thread.sleep(5000);
             System.out.println("pull success");
         } else {  
+
         	System.out.println("bash " + "Commands/linux/putGradle.sh " + courseFile + " " + appdir + " " + codedir);
         	r.exec("bash " + "Commands/linux/putGradle.sh " + courseFile + " " + appdir + " " + codedir);
             Thread.sleep(5000);
             System.out.println("pull success");
         }
         filename=codedir+File.separator+"jacocotest.java";
+        f=new File(filename);
+        if(!f.exists()) {
+        	filename=courseFile+File.separator+filename;
+        }
         br = new BufferedReader(new FileReader(filename));
         buf.append("package "+packageName+";");
         while ((line = br.readLine()) != null) {
@@ -44,6 +60,10 @@ public class modify {
 		buf = new StringBuffer();
 		
         filename=codedir+File.separator+"LogUtils.java";
+        f=new File(filename);
+        if(!f.exists()) {
+        	filename=courseFile+File.separator+filename;
+        }
         br = new BufferedReader(new FileReader(filename));
         buf.append("package "+packageName+";");
         while ((line = br.readLine()) != null) {
@@ -60,6 +80,13 @@ public class modify {
 		BufferedWriter bw = null;
 		String line=null;
 		StringBuffer buf=null;
+		File directory = new File("");
+        String courseFile = directory.getCanonicalPath();
+        System.out.println(courseFile);
+		File f=new File(filename);
+        if(!f.exists()) {
+        	filename=courseFile+File.separator+filename;
+        }
 		if(type.equals("build")){
 			//read and modify
 			br = new BufferedReader(new FileReader(filename));
@@ -144,6 +171,12 @@ public class modify {
 		bw.close();
 	}
 	public static void modifyFile(File dir,String pn) throws IOException {
+		File directory = new File("");
+        String courseFile = directory.getCanonicalPath();
+        System.out.println(courseFile);
+        if(!dir.exists()) {
+        	dir=new File(courseFile+File.separator+dir.getAbsolutePath());
+        }
 		File[] files=dir.listFiles();
 		BufferedReader br=null;
 		BufferedWriter bw = null;

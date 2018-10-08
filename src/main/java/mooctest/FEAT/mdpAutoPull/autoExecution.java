@@ -17,6 +17,60 @@ import mooctest.FEAT.Main.Entrance;
 import mooctest.FEAT.Util.GetDeviceList;
 
 public class autoExecution {
+	public static double readResult(File log) throws NumberFormatException, IOException {
+		if(!log.exists()) return 0;
+		BufferedReader br=new BufferedReader(new FileReader(log));
+		br.readLine();
+		double ans=Double.parseDouble(br.readLine().split(" ")[0].split("=")[1]);
+		br.close();
+		return ans;
+	}
+	public static double getMutationRatio(String outPutDir,String toolName) {
+		//TODO wait for improvment 
+		try {
+			//get original coverage point
+			File f=new File(outPutDir+File.separator+toolName+File.separator+"mutationResult");
+			File mutantResultFile=new File(outPutDir+File.separator+toolName+File.separator+"mutationResult"+File.separator+"mutationResult.txt");
+			if(!mutantResultFile.exists()) mutantResultFile.createNewFile();
+			BufferedWriter bw=new BufferedWriter(new FileWriter(mutantResultFile));
+			double score=0;
+			File []mutantResults=f.listFiles();
+			int mutationNumber=mutantResults.length;
+			bw.write("mutantNumber: "+mutationNumber+"\n");
+			bw.flush();
+			List<String> deviceList=GetDeviceList.getDeviceList();
+			//for each devices
+			for(int i=0;i<deviceList.size();i++) {
+				int kill=0;
+				double coveragePoint;
+				File originalResultLog=new File(outPutDir+File.separator+toolName+File.separator+deviceList.get(i)+File.separator+"result.log");
+				coveragePoint=readResult(originalResultLog);
+				//origin exectuion failed
+				if(coveragePoint==0) {
+					bw.write("UDID: "+deviceList.get(i)+"\n");
+					bw.write("killed: "+"0"+"\n");
+					bw.write("score: "+"0"+"\n");
+					bw.flush();
+				}else {//origin execution success
+					for(int j=1;j<=mutationNumber;j++) {
+						File mutantLog=new File(outPutDir+File.separator+toolName+File.separator+"mutationResult"+File.separator+j+File.separator+toolName+File.separator+deviceList.get(i)+File.separator+"result.log");
+						double mutantPoint=readResult(mutantLog);
+						if(mutantPoint!=0&&mutantPoint!=coveragePoint) kill++;
+					}
+					bw.write("UIID: "+deviceList.get(i)+"\n");
+					bw.write("killed: "+kill+"\n");
+					bw.write("score: "+(double)kill/(double)mutationNumber+"\n");
+					score+=(double)kill/(double)mutationNumber;
+					bw.flush();
+				}
+			}
+			bw.close();
+			return score/(double)deviceList.size();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return 0;
+		}
+	}
 	public static void collectMutationLog(String outputDir,List<String> deviceList) throws IOException {
 		//get the mutation execution information
 		HashMap<String,Integer> killRate=new HashMap<String,Integer>();

@@ -3,19 +3,13 @@ package mooctest.FEAT.Main;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
-import javax.xml.transform.Result;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -199,6 +193,7 @@ public class GetPoint{
 		} 
 		return sb.toString();
 	}
+	@SuppressWarnings("deprecation")
 	public void getExcepetionInfo(String filename,String filename2) throws ParseException {
         File logCat = new File(filename);
         File exceptionBlocks = new File(filename2);
@@ -452,9 +447,6 @@ public class GetPoint{
 		return exceptionPoint;
 	}
 	public double getMutationPoint(String log) throws IOException, ParseException{
-		String logDir=log.substring(0, log.lastIndexOf("/"));
-		getExcepetionInfo(log,logDir+File.separator+"1-ExceptionInfo.txt");
-		ArrayList<ExceptionType> result=getExcepetionCollect(logDir+File.separator+"1-ExceptionInfo.txt",logDir+File.separator+"2-ExceptionCollect.txt");
 		double number = 0;
 		
 		
@@ -467,6 +459,6 @@ public class GetPoint{
 	}
 	public static void main(String []args) throws IOException, ParseException {
 		GetPoint gp=new GetPoint("/home/xyr/eclipse-workspace/outputs/memetastic","/home/xyr/eclipse-workspace/sourceCode/BihuDaily", 10000);
-		double ExceptionPoint = gp.getExceptionPoint("");//calculate point from exception
+		gp.getExceptionPoint("");//calculate point from exception
 	}
 }

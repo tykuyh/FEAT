@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+MemeTastic by Gregor Santner (https://gsantner.net)
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to MemeTastic.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+
+    <!-- main -->
+    <string name="main__navdrawer__open">Open navigation drawer</string>
+    <string name="main__navdrawer__close">Close navigation drawer</string>
+
+    <string name="main__save_meme">Save Meme</string>
+    <string name="main__share_meme">Share Meme</string>
+    <string name="main__create_meme">Create Meme</string>
+    <string name="main__delete_meme">Delete meme</string>
+
+    <string name="main__memecat__humans">Humans</string>
+    <string name="main__memecat__cartoon">Cartoon</string>
+    <string name="main__memecat__animals">Animals</string>
+    <string name="main__memecat__custom">Custom</string>
+    <string name="main__memecat__rage">Rage</string>
+
+    <string name="memelist_data_mode__saved">Saved</string>
+    <string name="memelist_data_mode__favs">Favs</string>
+    <string name="memelist_data_mode__create">Create</string>
+    <string name="memelist_data_mode__hidden">Hidden</string>
+
+    <string name="memelist_view_mode__rows_with_title">Rows with title</string>
+    <string name="memelist_view_mode__picture_grid">Picture Grid</string>
+
+    <string name="main__search_meme">Search Meme</string>
+    <string name="main__get_picture_from_gallery">Get picture from Gallery</string>
+    <string name="main__get_picture_from_camera">Get picture from Camera</string>
+    <string name="main__error_camera_cannot_start">Could not start Camera.</string>
+    <string name="main__error_no_picture_selected">No picture was selected.</string>
+    <string name="main__error_fail_retrieve_picture">Could not load picture from storage.</string>
+    <string name="main__share_meme_prompt">Share your Meme via…</string>
+
+    <string name="main__donate">Donate</string>
+    <string name="main__recommend_app">Recommend</string>
+    <string name="changelog">Changelog</string>
+    <string name="main__exit">Exit</string>
+    <string name="main__yes">yes</string>
+
+    <string name="main__nodata__favourites">No favourites yet.\nUse the star button of a meme template to add it to the favourites.</string>
+    <string name="main__nodata__custom_templates">No custom templates yet.\nPlaced template images here:%1$s</string>
+    <string name="main__nodata__saved">No memes saved yet.\nUse the top save button after editing a meme.</string>
+
+    <!-- Creator -->
+    <string name="creator__press_back_again_to_exit">Press back again to stop editing this meme. Meme will be lost if it is not already saved.</string>
+    <string name="creator__saved_successfully_message">This meme was successfully stored on your device. Do you want to quit editing this meme now?</string>
+    <string name="creator__text_size">Text Size</string>
+    <string name="creator__text_color">Text Color</string>
+    <string name="creator__border_color">Border Color</string>
+    <string name="creator__saved_successfully">Successfully saved!</string>
+    <string name="creator__hint_top_caption">Top caption</string>
+    <string name="creator__hint_bottom_caption">Bottom caption</string>
+    <string name="creator__hint_caption">Enter caption</string>
+    <string name="creator__font">Font</string>
+    <string name="creator__keep_editing">Keep editing</string>
+    <string name="creator__text">Text</string>
+    <string name="creator__size">Size</string>
+    <string name="creator__background">Background</string>
+    <string name="creator__border">Border</string>
+    <string name="creator__picture">Picture</string>
+
+    <!-- Info -->
+    <string name="about">About</string>
+    <string name="developed_by">Developed by</string>
+    <string name="additional_contact">More informations</string>
+    <string name="licenses">Licenses</string>
+    <string name="show_licenses">Show licenses</string>
+    <string name="contributors">Contributors</string>
+    <string name="more_information">More information</string>
+    <string name="show_app_license">Show GNU GPLv3 license</string>
+    <string name="show_third_party_licenses">Show 3rd party licenses</string>
+    <string name="miscellaneous">Miscellaneous</string>
+
+    <!-- Settings -->
+    <string name="settings__settings">Settings</string>
+    <string name="settings__all_caps">All caps</string>
+    <string name="settings__caps_off">Caps off</string>
+    <string name="settings__rotate">Rotate</string>
+    <string name="pref_title__render_quality_editor_percent">Render-Quality</string>
+    <string name="settings__cleanup_thumbnails">Clear thumbnails</string>
+    <string name="settings__pref_columns_portrait">Columns portrait</string>
+    <string name="settings__pref_columns_landscape">Columns landscape</string>
+    <string name="pref_title__appearance">Appearance</string>
+    <string name="pref_title__size">Size</string>
+    <string name="pref_title__memelist_data_mode">Default Mode</string>
+    <string name="pref_summary__memelist_data_mode">Default Mode to open at startup (Create, Favs or Saved)</string>
+    <string name="pref_title__functionality">Functionality</string>
+    <string name="pref_summary__auto_save_meme">Automatically save meme if pressing back and there was some input</string>
+    <string name="pref_title__auto_save_meme">Save when pressing back</string>
+    <string name="pref_summary__is_shuffle_meme_categories">Shuffle the list of memes after selecting a category</string>
+    <string name="pref_title__is_shuffle_meme_categories">Shuffle meme list</string>
+    <string name="creator__padding">Padding</string>
+    <string name="pref_title__overview">Overview</string>
+    <string name="pref_title__editor">Editor</string>
+    <string name="pref_summary__is_statusbar_hidden">Hide the status bar at this view</string>
+    <string name="pref_title__is_statusbar_hidden">Hide status bar</string>
+    <string name="pref_summary__picture_quality__percent" formatted="false">Quality and size of pictures. Higher values mean a longer load time. Depending on device hardware and picture size  the app may not work as expected if the value is above 25%.</string>
+    <string name="pref_title__thumbnail_quality__percent">Thumbnail quality</string>
+    <string name="pref_summary__memelist_view_type">Set view type (Picture grid, Rows with title)</string>
+    <string name="pref_title__memelist_view_type">View Type</string>
+    <string name="pref_title__is_show_in_gallery">Show in device gallery</string>
+
+    <!-- Language -->
+    <string name="pref_title__language">Language</string>
+    <string name="pref_desc__language">Change language of this app. Restart app for changes to take effect</string>
+    <string name="error_cannot_create_save_dir">Error: Cannot create save directory</string>
+    <string name="error_storage_permission">Need permission for storage to save memes and templates</string>
+    <string name="main__memecat__other">Other</string>
+    <string name="downloading">Downloading</string>
+    <string name="downloading_failed">Downloading failed</string>
+    <string name="unzipping">Unzipping</string>
+    <string name="downloading_success">Successfully downloaded</string>
+    <string name="download_latest_assets_message">This will download fonts and meme templates (about 20 MB data).</string>
+    <string name="download_latest_assets_message_more">In settings you can manually get the latest assets later too.</string>
+    <string name="download_latest_assets_title">Download latest assets</string>
+    <string name="checking_assets_for_update">Checking if there are more recent assets available</string>
+    <string name="palette_colors">Palette</string>
+    <string name="preset_colors">Presets</string>
+    <string name="select_color">Select color</string>
+
+    <string name="code">Code</string>
+
+    <!--Meme pop up menu strings-->
+    <string name="favourite">Favourite</string>
+    <string name="remove_favourite">Remove favourite</string>
+    <string name="show_title">Show title</string>
+    <string name="edit_title">Edit title</string>
+    <string name="hide">Hide</string>
+    <string name="unhide">Unhide</string>
+    <string name="empty_caption_hint">Tap Here to add Caption</string>
+</resources>

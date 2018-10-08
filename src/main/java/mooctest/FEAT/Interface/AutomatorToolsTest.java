@@ -1,8 +1,6 @@
 package mooctest.FEAT.Interface;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -53,7 +51,6 @@ public abstract class AutomatorToolsTest extends Thread{
 			}
 			OSUtil.runCommand(cmd);
 		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         

@@ -1,10 +1,10 @@
-coverageRate=1
-coverage=0.3
-coverage=0.3
-coverage=0.1
-coverage=0.1
-coverage=0.1
-coverage=0.1
-exceptionRate=0
-mutationRate=0
+coverageRatio=0.8
+InstructionsCoverage=0.3
+BranchesCoverage=0.3
+CxtyCoverage=0.1
+LinesCoverage=0.1
+MethodsCoverage=0.1
+ClassesCoverage=0.1
+exceptionRatio=0.1
+mutationRatio=0.1
 

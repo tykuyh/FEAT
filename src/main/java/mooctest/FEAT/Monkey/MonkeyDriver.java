@@ -35,6 +35,7 @@ public class MonkeyDriver extends AutomatorToolsDriver{
 		String line;
 		while(!((line=br.readLine())==null)) {
 			if(line.contains("Events injected")) {
+				br.close();
 				return(Integer.parseInt(line.split(":")[1]));
 			}
 		}

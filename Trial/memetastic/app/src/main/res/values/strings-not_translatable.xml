@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+MemeTastic by Gregor Santner (http://gsantner.net)
+
+To the extent possible under law, the person who associated CC0 with
+this file has waived all copyright and related or neighboring rights
+to MemeTastic.
+
+You should have received a copy of the CC0 legalcode along with this
+work. If not, see <https://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<resources>
+
+    <!-- General -->
+    <string name="app_name" translatable="false">MemeTastic</string>
+    <string name="app_fileprovider" translatable="false">io.github.gsantner.memetastic.fileprovider</string>
+    <string name="app_www_source" translatable="false">https://github.com/gsantner/memetastic</string>
+
+    <string name="info_author" translatable="false">Gregor Santner\ngsantner AT mailbox DOT org\ngsantner.net\n\nMatthias Ringwald</string>
+    <string name="page_additional_contact_text" translatable="false">GitHub\nhttps://github.com/gsantner/memetastic</string>
+
+    <string name="app_description" translatable="false">much meme. very wow.</string>
+    <string name="main__ready_to_memetastic" translatable="false">Ready to MemeTastic? Try it now!\n%1$s</string>
+
+    <!-- pictures -->
+    <string name="cached_picture_filename" translatable="false">MemeTastic_meme.jpg</string>
+    <string name="custom_templates_visual" translatable="false">\n» Pictures » MemeTastic » templates</string>
+
+    <string name="app_version_v" translatable="false">App Version  v%1$s</string>
+    <string name="ok" translatable="false">@android:string/ok</string>
+
+    <string name="team" translatable="false">Team</string>
+
+    <!-- You are NOT allowed to remove parts of the license text below-->
+    <string name="copyright_short" translatable="false">
+        MemeTastic by Gregor Santner (http://gsantner.net)
+        \nCopyright © 2016-2018
+    </string>
+    <string name="copyright_license_text_official" translatable="false"><![CDATA[
+        ### Copyright © 2016-2018
+        \n**MemeTastic by [Gregor Santner](http://gsantner.net)**
+        \n
+        \n**Get the official version of MemeTastic:**
+        \n
+            [Source code](https://github.com/gsantner/memetastic) | [Homepage](http://gsantner.net/#MemeTastic)
+        \n[Google Play](https://play.google.com/store/apps/details?id=io.github.gsantner.memetastic)~°| [F-Droid](https://f-droid.org/repository/browse/?fdid=io.github.gsantner.memetastic)
+        \n
+        \nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+        \n
+        \nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+        \n
+    ]]></string>
+    <!-- License end -->
+
+    <string name="donate__bitcoin_id" translatable="false">1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5</string>
+    <string name="donate__bitcoin_amount" translatable="false">0.01</string>
+    <string name="donate__bitcoin_message" translatable="false">Have some coke, and a nice day</string>
+    <string name="donate__bitcoin_url" translatable="false">http://gsantner.net/#donate</string>
+    <string name="donate__url" translatable="false">https://liberapay.com/gsantner/donate</string>
+
+
+    <!-- Pref keys -->
+    <string name="pref_key__render_quality__percent" translatable="false">pref_key__render_quality__percent</string>
+    <string name="pref_key__cleanup_thumbnails" translatable="false">pref_key__cleanup_thumbnails</string>
+    <string name="pref_key__last_used_font" translatable="false">pref_key__last_used_font</string>
+    <string name="pref_key__favourite_meme_templates" translatable="false">pref_key__favourite_meme_templates</string>
+    <string name="pref_key__last_selected_tab" translatable="false">pref_key__last_selected_tab</string>
+    <string name="pref_key__grid_column_count_portrait" translatable="false">pref_key__grid_column_count_portrait</string>
+    <string name="pref_key__grid_column_count_landscape" translatable="false">pref_key__grid_column_count_landscape</string>
+    <string name="pref_key__app_first_start" translatable="false">pref_key__app_first_start</string>
+    <string name="pref_key__app_first_start_current_version" translatable="false">pref_key__app_first_start_current_version</string>
+    <string name="pref_key__default_main_mode" translatable="false">pref_key__default_main_mode</string>
+    <string name="pref_key__auto_save_meme" translatable="false">pref_key__auto_save_meme</string>
+    <string name="pref_key__is_shuffle_meme_tags" translatable="false">pref_key__is_shuffle_meme_tags</string>
+    <string name="pref_key__is_editor_statusbar_hidden" translatable="false">pref_key__is_editor_statusbar_hidden</string>
+    <string name="pref_key__is_overview_statusbar_hidden" translatable="false">pref_key__is_overview_statusbar_hidden</string>
+    <string name="pref_key__thumbnail_quality__percent" translatable="false">pref_key__thumbnail_quality__percent</string>
+    <string name="pref_key__language" translatable="false">pref_key__language</string>
+    <string name="pref_key__save_directory" translatable="false">pref_key__save_directory</string>
+    <string name="pref_key__latest_asset_archive_date" translatable="false">pref_key__latest_asset_archive_date</string>
+    <string name="pref_key__latest_asset_archive_check_date" translatable="false">pref_key__latest_asset_archive_check_date</string>
+    <string name="pref_key__is_migrated" translatable="false">pref_key__is_migrated</string>
+    <string name="pref_key__download_assets_try" translatable="false">pref_key__download_assets_try</string>
+    <string name="pref_key__memelist_view_type" translatable="false">pref_key__memelist_view_type</string>
+    <string name="pref_key__is_show_in_gallery" translatable="false">pref_key__is_show_in_gallery</string>
+    <string name="pref_key__hidden_meme_templates" translatable="false">pref_key__hidden_meme_templates</string>
+
+</resources>

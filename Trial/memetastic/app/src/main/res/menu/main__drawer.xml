@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav0"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_mode_create"
+            android:checked="true"
+            android:icon="@drawable/ic_gavel_white_48px"
+            android:title="@string/memelist_data_mode__create" />
+
+        <item
+            android:id="@+id/action_mode_favs"
+            android:icon="@drawable/ic_star_black_32dp"
+            android:title="@string/memelist_data_mode__favs" />
+
+        <item
+            android:id="@+id/action_mode_saved"
+            android:icon="@drawable/ic_save_white_48px"
+            android:title="@string/memelist_data_mode__saved" />
+
+        <item
+            android:id="@+id/action_mode_hidden"
+            android:icon="@drawable/ic_remove_circle_black_24dp"
+            android:title="@string/memelist_data_mode__hidden" />
+    </group>
+
+    <group
+        android:id="@+id/nav1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/action_about"
+            android:icon="@drawable/ic_info_black_48px"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings_white_48px"
+            android:title="@string/settings__settings" />
+
+        <item
+            android:id="@+id/action_exit"
+            android:icon="@drawable/ic_cancel_black_48px"
+            android:title="@string/main__exit" />
+    </group>
+
+
+    <group
+        android:id="@+id/nav2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/action_recommend"
+            android:icon="@drawable/ic_thumb_up_black_48px"
+            android:title="@string/main__recommend_app" />
+        <item
+            android:id="@+id/action_donate"
+            android:icon="@drawable/ic_favorite_white_48px"
+            android:title="@string/main__donate"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/action_homepage_code"
+            android:icon="@drawable/ic_language_white_48px"
+            android:title="@string/code" />
+    </group>
+</menu>

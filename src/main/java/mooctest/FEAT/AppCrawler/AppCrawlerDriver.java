@@ -44,6 +44,7 @@ public class AppCrawlerDriver extends AutomatorToolsDriver{
 		String line;
 		br.readLine();
 		line=br.readLine();
+		br.close();
 		return Double.parseDouble(line.split(" ")[0].split("=")[1]);
 	}
 	public double getMutationRatio() {
